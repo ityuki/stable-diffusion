@@ -333,6 +333,8 @@ def main():
                     img = Image.fromarray(grid.astype(np.uint8))
                     img = put_watermark(img, wm_encoder)
                     img.save(os.path.join(outpath, f'grid-{grid_count:04}.png'))
+                    with open(os.path.join(outpath, f'grid-{grid_count:04}.txt'),mode="w",encoding="UTF-8") as f:
+                        f.write(opt.prompt)
                     grid_count += 1
 
                 toc = time.time()

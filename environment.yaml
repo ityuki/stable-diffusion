@@ -3,6 +3,7 @@ channels:
   - pytorch
   - defaults
 dependencies:
+  - git
   - python=3.8.5
   - pip=20.3
   - cudatoolkit=11.3
@@ -17,7 +18,7 @@ dependencies:
     - invisible-watermark
     - imageio==2.9.0
     - imageio-ffmpeg==0.4.2
-    - pytorch-lightning==1.4.2
+    - pytorch-lightning==1.5.0
     - omegaconf==2.1.1
     - test-tube>=0.7.5
     - streamlit>=0.73.1
@@ -26,6 +27,6 @@ dependencies:
     - transformers==4.19.2
     - torchmetrics==0.6.0
     - kornia==0.6
-    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
-    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - -e git+https://github.com/ityuki/taming-transformers.git@master#egg=taming-transformers
+    - -e git+https://github.com/ityuki/CLIP.git@main#egg=clip
     - -e .
